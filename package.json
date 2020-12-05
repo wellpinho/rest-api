@@ -1,0 +1,23 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Rest API com NodeJS e upload de imagens",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellpinho/rest-api.git"
+  },
+  "author": "Wellington Pinho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wellpinho/rest-api/issues"
+  },
+  "homepage": "https://github.com/wellpinho/rest-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
