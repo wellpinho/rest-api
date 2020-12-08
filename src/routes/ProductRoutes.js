@@ -23,9 +23,13 @@ router.get('/product/:id', (req, res, next) => {
   }
 })
 
-router.post('/products', (req, res, next) => {
+router.post('/product', (req, res, next) => {
+  const { name, price } = req.body
+
   return res.status(200).json({
-    message: 'Usind the method POST for create a new product.'
+    message: 'Usind the method POST for create a new product.',
+    nome: name,
+    preço: price
   })
 })
 

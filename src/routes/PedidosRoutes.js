@@ -24,8 +24,12 @@ router.get('/request/:id', (req, res, next) => {
 })
 
 router.post('/requests', (req, res, next) => {
+  const { quantity, product_id } = req.body
+
   return res.status(200).json({
-    message: 'Usind the method POST for create a new request.'
+    message: 'Usind the method POST for create a new request.',
+    product: product_id,
+    Quantity: quantity
   })
 })
 
